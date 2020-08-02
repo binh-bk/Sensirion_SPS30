@@ -227,7 +227,7 @@ if __name__ == '__main__':
     print(usbs)
     process = list()
     for port in usbs:
-        p = SPS30(port=port, push_mqtt=True)
+        p = SPS30(port=port, push_mqtt=False)
         process.append(p)
     print('Starting')
     while True:
