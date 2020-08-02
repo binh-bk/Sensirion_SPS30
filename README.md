@@ -3,7 +3,7 @@ Python script to read multiple fine particles (PM1 to PM10) from Sensirion SPS30
 
 # Set up
 - Communication via UART with a SLAB CP2102 adapter
-- For the pin, refer the SPS30 datasheet [stored here](#)
+- For the pin, refer the SPS30 datasheet [stored here](#) or on [SparkFun](https://cdn.sparkfun.com/assets/2/d/2/a/6/Sensirion_SPS30_Particulate_Matter_Sensor_v0.9_D1__1_.pdf)
 - Connect pin TX (on USB adapter) to RX pin (on SPS30)
 
 # Run
@@ -51,3 +51,18 @@ p = SPS30(port=port, push_mqtt=False)
 <p>
     <img src="img/pm2.5_sps30.png">
 </p>
+- or plot PM1 to PM10
+<p>
+    <img src="img/pms_sps30.png">
+</p>
+- or to compare several sensors at one (in which this script is very useful)
+<p>
+    <img src="img/pmx4_sps30_avg.png">
+</p>
+- or to simpify by only the mean and standard deviation from multiple sensors
+<p>
+    <img src="img/pms_sps30.png">
+</p>
+
+# Credit
+The core of Python Inteface with SPS30 was forked from [feyzikesim](https://github.com/feyzikesim/sps30)
