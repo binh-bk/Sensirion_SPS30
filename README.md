@@ -57,11 +57,11 @@ p = SPS30(port=port, push_mqtt=False)
 </p>
 - or to compare several sensors at one (in which this script is very useful)
 <p>
-    <img src="img/pmx4_sps30_avg.png">
+    <img src="img/pmx4_sps30.png">
 </p>
 - or to simpify by only the mean and standard deviation from multiple sensors
 <p>
-    <img src="img/pms_sps30.png">
+    <img src="img/pms_sps30_avg.png">
 </p>
 
 # Credit
