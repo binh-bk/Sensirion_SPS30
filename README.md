@@ -45,3 +45,9 @@ auth = {'username': 'mqtt_user', 'password': 'mqtt_password'} # and these two
 ```
 p = SPS30(port=port, push_mqtt=False)
 ```
+
+# Data analysis
+- analyze data by each sensor using different moving average (to smooth out the data)
+<p>
+    <img src="img/pm2.5_sps30.png">
+</p>
